@@ -17,18 +17,22 @@ const isAlarmState = (current: number, limit: number): boolean => limit > 0 && c
 
 const Icon = memo(
     styled(FontAwesomeIcon)<{ $alarm: boolean }>`
-        ${(props) => (props.$alarm ? tw`text-red-400` : tw`text-neutral-500`)};
+        ${(props) => (props.$alarm ? tw`text-red-500` : tw`text-cyan-600`)};
     `,
     isEqual
 );
 
 const IconDescription = styled.p<{ $alarm: boolean }>`
     ${tw`text-sm ml-2`};
-    ${(props) => (props.$alarm ? tw`text-white` : tw`text-neutral-400`)};
+    ${(props) => (props.$alarm ? tw`text-red-600` : tw`text-gray-500`)};
 `;
 
 const StatusIndicatorBox = styled(GreyRowBox)<{ $status: ServerPowerState | undefined }>`
-    ${tw`grid grid-cols-12 gap-4 relative`};
+    ${tw`grid grid-cols-12 gap-4 relative bg-white border border-cyan-100 shadow-sm rounded-xl transition-all duration-150`};
+
+    &:hover {
+        ${tw`border-cyan-300 shadow-lg`};
+    }
 
     & .status-bar {
         ${tw`w-2 bg-red-500 absolute right-0 z-20 rounded-full m-1 opacity-50 transition-all duration-150`};
@@ -97,7 +101,7 @@ export default ({ server, className }: { server: Server; className?: string }) =
                 <div>
                     <p css={tw`text-lg break-words`}>{server.name}</p>
                     {!!server.description && (
-                        <p css={tw`text-sm text-neutral-300 break-words line-clamp-2`}>{server.description}</p>
+                        <p css={tw`text-sm text-gray-500 break-words line-clamp-2`}>{server.description}</p>
                     )}
                 </div>
             </div>

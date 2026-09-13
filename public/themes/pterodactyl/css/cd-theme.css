@@ -1,0 +1,62 @@
+/* CD Panel visual layer for the legacy admin area. */
+body.skin-blue {
+    background: #f0f9ff;
+    color: #334155;
+}
+
+.skin-blue .main-header .navbar,
+.skin-blue .main-header .logo {
+    background: rgba(255, 255, 255, 0.86);
+    color: #0f172a;
+    border-bottom: 1px solid rgba(56, 189, 248, 0.22);
+    backdrop-filter: blur(16px);
+}
+
+.skin-blue .main-header .logo:hover,
+.skin-blue .main-header .navbar .nav > li > a:hover {
+    background: #e0f2fe;
+    color: #0369a1;
+}
+
+.skin-blue .main-sidebar,
+.skin-blue .left-side {
+    background: rgba(255, 255, 255, 0.92);
+    border-right: 1px solid #e0f2fe;
+}
+
+.skin-blue .sidebar-menu > li.header {
+    color: #0284c7;
+    background: transparent;
+}
+
+.skin-blue .sidebar-menu > li > a {
+    color: #475569;
+    border-radius: 10px;
+    margin: 3px 10px;
+}
+
+.skin-blue .sidebar-menu > li:hover > a,
+.skin-blue .sidebar-menu > li.active > a {
+    color: #0369a1;
+    background: #e0f2fe;
+    border-left-color: #38bdf8;
+}
+
+.skin-blue .content-wrapper,
+.skin-blue .right-side {
+    background: #f0f9ff;
+}
+
+.skin-blue .content-header h1,
+.skin-blue .box-title,
+.skin-blue .main-footer {
+    color: #0f172a;
+}
+
+.box,
+.small-box,
+.nav-tabs-custom {
+    border: 1px solid #e0f2fe;
+    border-radius: 14px;
+    box-shadow: 0 12px 30px rgba(14, 165, 233, 0.08);
+}

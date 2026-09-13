@@ -14,7 +14,7 @@ export default createGlobalStyle`
     }
 
     body {
-        ${tw`font-sans bg-neutral-800 text-neutral-200`};
+        ${tw`font-sans bg-cyan-50 text-gray-800`};
         letter-spacing: 0.015em;
     }
 
@@ -23,7 +23,7 @@ export default createGlobalStyle`
     }
 
     p {
-        ${tw`text-neutral-200 leading-snug font-sans`};
+        ${tw`text-gray-600 leading-snug font-sans`};
     }
 
     form {
@@ -56,7 +56,7 @@ export default createGlobalStyle`
         border-right-width: 4px;
         border-left-width: 4px;
         -webkit-border-radius: 9px 4px;
-        -webkit-box-shadow: inset 0 0 0 1px hsl(211, 10%, 53%), inset 0 0 0 4px hsl(209deg 18% 30%);
+        -webkit-box-shadow: inset 0 0 0 1px #7dd3fc, inset 0 0 0 4px #e0f2fe;
     }
 
     ::-webkit-scrollbar-track-piece {
