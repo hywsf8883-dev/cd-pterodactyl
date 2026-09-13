@@ -15,6 +15,8 @@ export default createGlobalStyle`
 
     body {
         ${tw`font-sans bg-cyan-50 text-gray-800`};
+        background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 52%, #e0f2fe 100%) !important;
+        color: #1e293b !important;
         letter-spacing: 0.015em;
     }
 
