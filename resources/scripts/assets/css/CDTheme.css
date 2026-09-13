@@ -1,0 +1,78 @@
+:root {
+    --cd-sky-50: #f0f9ff;
+    --cd-sky-100: #e0f2fe;
+    --cd-sky-300: #7dd3fc;
+    --cd-sky-600: #0284c7;
+    --cd-ink: #0f172a;
+    --cd-muted: #64748b;
+}
+
+body {
+    background: linear-gradient(135deg, var(--cd-sky-50), #ffffff 52%, var(--cd-sky-100)) !important;
+    color: var(--cd-ink) !important;
+}
+
+a {
+    color: var(--cd-sky-600);
+}
+
+input:not([type='checkbox']):not([type='radio']),
+select,
+textarea {
+    color: var(--cd-ink) !important;
+    background: rgba(255, 255, 255, 0.92) !important;
+    border: 1px solid var(--cd-sky-300) !important;
+    border-radius: 0.75rem !important;
+    box-shadow: 0 3px 12px rgba(14, 165, 233, 0.06) !important;
+}
+
+input:not([type='checkbox']):not([type='radio']):focus,
+select:focus,
+textarea:focus {
+    border-color: var(--cd-sky-600) !important;
+    box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.18) !important;
+}
+
+button {
+    transition: transform 150ms ease, box-shadow 150ms ease, filter 150ms ease;
+}
+
+button:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.03);
+}
+
+/* Convert common legacy content surfaces to the CD glass-card language. */
+.bg-neutral-800,
+.bg-neutral-700,
+.bg-gray-700,
+.bg-gray-600 {
+    color: var(--cd-ink) !important;
+    background: rgba(255, 255, 255, 0.88) !important;
+    border-color: var(--cd-sky-100) !important;
+    box-shadow: 0 12px 30px rgba(14, 165, 233, 0.08) !important;
+}
+
+.text-neutral-200,
+.text-neutral-300,
+.text-neutral-400,
+.text-neutral-500,
+.text-gray-300,
+.text-gray-400 {
+    color: var(--cd-muted) !important;
+}
+
+/* Keep the terminal readable instead of applying the light card treatment. */
+.bg-gray-900,
+.terminal,
+[class*='terminal'] {
+    color: #e2e8f0 !important;
+    background: #0f1720 !important;
+}
+
+.shadow,
+.shadow-md,
+.shadow-lg,
+.shadow-xl {
+    box-shadow: 0 14px 34px rgba(14, 165, 233, 0.12) !important;
+}
