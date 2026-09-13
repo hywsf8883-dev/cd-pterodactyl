@@ -76,11 +76,15 @@ export default () => {
                                 <ServerRow key={server.uuid} server={server} css={index > 0 ? tw`mt-2` : undefined} />
                             ))
                         ) : (
-                            <p css={tw`text-center text-sm text-neutral-400`}>
-                                {showOnlyAdmin
-                                    ? 'There are no other servers to display.'
-                                    : 'There are no servers associated with your account.'}
-                            </p>
+                            <div css={tw`bg-white border border-cyan-100 rounded-2xl shadow-lg p-10 text-center`}>
+                                <div css={tw`mx-auto mb-5 grid place-items-center w-16 h-16 rounded-2xl text-white text-xl font-bold bg-gradient-to-br from-cyan-600 to-cyan-400 shadow-xl`}>CD</div>
+                                <p css={tw`text-xl text-gray-800 font-medium`}>Your workspace is ready</p>
+                                <p css={tw`mt-2 text-sm text-gray-500`}>
+                                    {showOnlyAdmin
+                                        ? 'There are no other servers to display.'
+                                        : 'There are no servers associated with your account.'}
+                                </p>
+                            </div>
                         )
                     }
                 </Pagination>

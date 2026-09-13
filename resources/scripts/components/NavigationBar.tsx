@@ -18,10 +18,14 @@ const RightNavigation = styled.div`
     & > button,
     & > .navigation-link {
         ${tw`flex items-center h-full no-underline text-gray-500 px-5 cursor-pointer transition-all duration-150`};
+        transform: translateY(0);
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
 
         &:active,
         &:hover {
             ${tw`text-cyan-700 bg-white/70`};
+            transform: translateY(-1px);
+            filter: drop-shadow(0 5px 8px rgba(14, 165, 233, 0.16));
         }
 
         &:active,

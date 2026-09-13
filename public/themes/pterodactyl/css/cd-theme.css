@@ -24,6 +24,12 @@ body.skin-blue .right-side {
     color: #0369a1;
 }
 
+.skin-blue .main-header .logo {
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    text-shadow: 0 1px 0 #ffffff;
+}
+
 .skin-blue .main-sidebar,
 .skin-blue .left-side {
     background: rgba(255, 255, 255, 0.92);
@@ -39,6 +45,8 @@ body.skin-blue .right-side {
     color: #475569;
     border-radius: 10px;
     margin: 3px 10px;
+    box-shadow: 0 2px 0 rgba(14, 165, 233, 0.06);
+    transition: transform 150ms ease, box-shadow 150ms ease, background 150ms ease;
 }
 
 .skin-blue .sidebar-menu > li > a i {
@@ -50,6 +58,8 @@ body.skin-blue .right-side {
     color: #0369a1;
     background: #e0f2fe;
     border-left-color: #38bdf8;
+    transform: translateX(3px);
+    box-shadow: 0 7px 16px rgba(14, 165, 233, 0.15);
 }
 
 .skin-blue .content-wrapper,
